@@ -19,7 +19,7 @@ public abstract class Joc {
     private final int height;
     private final int background;
     private boolean jocFinalitzat = false;
-    
+
 //<editor-fold defaultstate="collapsed" desc="CONSTRUCTORS">
     /**
      * Constructor amb valors Canvas per defecte.
@@ -48,13 +48,15 @@ public abstract class Joc {
         this.background = background;
     }
 //</editor-fold>
-    
+
+
+
 //<editor-fold defaultstate="collapsed" desc="PRESENTACIO_DEL_JOC">
     /**
      * Aquest mètode s'ha de cridar a settings de processing.
      */
     public void canvasSettings(){
-        canvas.size(width, height);
+        canvas.size(1920, 1080);
     }
     
     /**

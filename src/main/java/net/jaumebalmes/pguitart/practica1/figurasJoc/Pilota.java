@@ -9,11 +9,20 @@ public class Pilota extends Circle {
     private int vX;
     private int vY;
 
+
+
     public Pilota(int vX, int vY) {
         this.vX = vX;
         this.vY = vY;
     }
 
+    public boolean isContinua() {
+        return continua;
+    }
+
+    public void setContinua(boolean continua) {
+        this.continua = continua;
+    }
 
     public void move (){
         int posX=getPoint().x;
@@ -42,17 +51,4 @@ public class Pilota extends Circle {
 
     }
 
-    /*metodo move agafa posicio get point
-
-    int velocitatX= 5;
-    int velocitatY=3;
-
-    x=getPoint().getX;
-    y=getPOint().getY;
-
-    posX+=velocitatX;
-    posY+=velocitatY;
-
-    setPoint(new Point(posX,posY);
-     */
 }

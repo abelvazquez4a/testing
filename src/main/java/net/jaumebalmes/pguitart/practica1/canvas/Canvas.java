@@ -9,6 +9,8 @@ import net.jaumebalmes.pguitart.practica1.joc.Joc;
 import net.jaumebalmes.pguitart.practica1.joc.JocPlujaFormes;
 import processing.core.PApplet;
 
+import java.awt.*;
+
 /**
  * Genera una pluja de rectangles, cercles i triangles en una tela (Canvas) de
  * Processing.
@@ -28,6 +30,7 @@ public class Canvas extends PApplet {
      */
     @Override
     public void setup() {
+        frameRate(144);
         joc.prepararJoc();
         joc.canvasSetup();
     }

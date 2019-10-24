@@ -6,8 +6,13 @@ import net.jaumebalmes.pguitart.practica1.figures.Circle;
 import net.jaumebalmes.pguitart.practica1.figures.Shape;
 import processing.core.PApplet;
 
+import java.util.ArrayList;
+
 public class JocPilotaMoviment extends Joc {
-    private Pilota pilota;
+    static boolean continua=true;
+    private ArrayList<Pilota> listaPilotas = new ArrayList<>();
+
+
 
     public JocPilotaMoviment(PApplet canvas) {
         super(canvas);
@@ -20,17 +25,29 @@ public class JocPilotaMoviment extends Joc {
 
     @Override
     public void canvasDraw() {
-        pilota.dibuixa();
+        if (this.continua) {
+            getCanvas().background(240,248,255);
+        }
+        for (Pilota pilota:listaPilotas
+             ) {pilota.dibuixa();
+
+        }
+
     }
 
     @Override
     public void prepararJoc() {
-        pilota = new Pilota(5,5);
+        for (int i = 0; i < 40; i++) {
+            listaPilotas.add(new Pilota((int)(Math.random()*15),(int)(Math.random()*15)));
+        }
     }
 
     @Override
     public void jugada() {
-        pilota.move();
+        for (Pilota pilota:listaPilotas
+             ) {
+            pilota.move();
+        }
     }
 
     @Override
