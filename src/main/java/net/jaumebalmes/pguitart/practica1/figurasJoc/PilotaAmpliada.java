@@ -3,22 +3,23 @@ package net.jaumebalmes.pguitart.practica1.figurasJoc;
 import java.awt.*;
 
 public class PilotaAmpliada extends Pilota  {
-
+    private static int contadorActivas=0;
     boolean activa=true;
 
 
     public PilotaAmpliada(float radi, Point point, Color color, int vX, int vY) {
         super(radi, point, color, vX, vY);
+        contadorActivas++;
     }
 
     public PilotaAmpliada(int vX, int vY) {
         super(vX, vY);
+        contadorActivas++;
     }
 
     @Override
     public void dibuixa() {
         if (this.activa){
-            System.out.println("dibujando pelota "+this);
             super.dibuixa();
         }
     }
@@ -26,6 +27,10 @@ public class PilotaAmpliada extends Pilota  {
 
     public boolean isActiva() {
         return activa;
+    }
+
+    public static int getContadorActivas() {
+        return contadorActivas;
     }
 
     public void setActiva(boolean activa) {
@@ -50,12 +55,14 @@ public class PilotaAmpliada extends Pilota  {
             this.setActiva(false);
             altraPilota.setRadi(this.getRadi()+altraPilota.getRadi());
             this.setColor(color);
+            contadorActivas--;
         }
         else if (altraPilota.getRadi()<this.getRadi()){
             color = this.getColor();
             altraPilota.setActiva(false);
             this.setRadi(this.getRadi()+altraPilota.getRadi());
             this.setColor(color);
+            contadorActivas--;
         }
     }
 }

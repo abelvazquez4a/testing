@@ -56,7 +56,7 @@ public abstract class Joc {
      * Aquest mètode s'ha de cridar a settings de processing.
      */
     public void canvasSettings(){
-        canvas.size(1920, 1080);
+        canvas.size(1280, 720);
     }
     
     /**
