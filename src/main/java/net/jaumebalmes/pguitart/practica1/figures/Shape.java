@@ -105,6 +105,14 @@ public abstract class Shape {
     public void setColor(Color color) {
         this.color = color;
     }
+
+    @Override
+    public String toString() {
+        return "Shape{" +
+                "point=" + point +
+                ", color=" + color +
+                '}';
+    }
 //</editor-fold>    
     
 }

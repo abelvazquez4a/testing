@@ -19,7 +19,6 @@ public class Circle extends Shape {
     final public static int MAX_RADI = (getCanvas().width + getCanvas().height) / 2 / Shape.N_MIN_FIGURES / 2;
 
     private float radi;
-    protected boolean continua;
 
     public Circle(float radi, Point point, Color color) {
         super(point, color);
@@ -33,6 +32,15 @@ public class Circle extends Shape {
         super(MAX_RADI, MAX_RADI);
         radi = (float) Math.random() * (MAX_RADI - MIN_RADI + 1) + MIN_RADI;
         //radi = Math.random() * midaMarc????
+    }
+
+    @Override
+    public String toString() {
+        return "Circle{" +
+                "radi=" + radi +
+                " x=" + getPoint().getX()+
+                " y=" + getPoint().getY()+
+                '}';
     }
 
     /**
@@ -56,7 +64,6 @@ public class Circle extends Shape {
 
     @Override
     public void dibuixa() {
-
         getCanvas().fill(getColor().getRGB());
         getCanvas().ellipse(
                 (float) getPoint().getX(),
