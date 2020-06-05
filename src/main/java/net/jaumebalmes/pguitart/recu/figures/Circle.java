@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package net.jaumebalmes.pguitart.practica1.figures;
+package net.jaumebalmes.pguitart.recu.figures;
 
 import java.awt.Color;
 import java.awt.Point;

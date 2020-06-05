@@ -3,13 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package net.jaumebalmes.pguitart.practica1.canvas;
+package net.jaumebalmes.pguitart.recu.canvas;
 
-import net.jaumebalmes.pguitart.practica1.joc.Joc;
-import net.jaumebalmes.pguitart.practica1.joc.JocPlujaFormes;
+import net.jaumebalmes.pguitart.recu.joc.Joc;
 import processing.core.PApplet;
-
-import java.awt.*;
 
 /**
  * Genera una pluja de rectangles, cercles i triangles en una tela (Canvas) de

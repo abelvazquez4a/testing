@@ -1,6 +1,5 @@
-package net.jaumebalmes.pguitart.practica1.joc;
+package net.jaumebalmes.pguitart.recu.joc;
 
-import net.jaumebalmes.pguitart.practica1.canvas.Canvas;
 import processing.core.PApplet;
 
 /**

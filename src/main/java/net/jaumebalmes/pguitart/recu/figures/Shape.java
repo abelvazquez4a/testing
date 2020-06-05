@@ -1,9 +1,9 @@
-package net.jaumebalmes.pguitart.practica1.figures;
+package net.jaumebalmes.pguitart.recu.figures;
 
 import java.awt.Color;
 import java.awt.Point;
 import java.util.Random;
-import net.jaumebalmes.pguitart.practica1.joc.Joc;
+import net.jaumebalmes.pguitart.recu.joc.Joc;
 import processing.core.PApplet;
 
 /**
