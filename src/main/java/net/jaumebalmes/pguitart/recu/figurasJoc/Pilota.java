@@ -59,7 +59,6 @@ public class Pilota extends Circle {
     public void move() {
 
         if (this.getFechaContagio()!=null){
-
             if ((System.currentTimeMillis()-this.getFechaContagio())>5000){
                 this.setColor(Color.pink);
             }

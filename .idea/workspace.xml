@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d08f6e6-6a6c-4799-a6db-46e94b5ee16e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/jaumebalmes/pguitart/recu/figurasJoc/Pilota.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/jaumebalmes/pguitart/recu/figurasJoc/Pilota.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/jaumebalmes/pguitart/recu/figurasJoc/PilotaAmpliada.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/jaumebalmes/pguitart/recu/figurasJoc/PilotaAmpliada.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/jaumebalmes/pguitart/recu/joc/RecuPereSebastian.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/jaumebalmes/pguitart/recu/joc/RecuPereSebastian.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/jaumebalmes/pguitart/recu/figurasJoc/Pilota.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/jaumebalmes/pguitart/recu/figurasJoc/Pilota.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/jaumebalmes/pguitart/recu/figurasJoc/PilotaAmpliada.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/jaumebalmes/pguitart/recu/figurasJoc/PilotaAmpliada.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/jaumebalmes/pguitart/recu/joc/RecuPereSebastian.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/jaumebalmes/pguitart/recu/joc/RecuPereSebastian.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +46,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RunDashboard">
@@ -153,7 +159,8 @@
       <workItem from="1572035979176" duration="44000" />
       <workItem from="1572631506562" duration="25597000" />
       <workItem from="1591336412894" duration="4269000" />
-      <workItem from="1591353589281" duration="10708000" />
+      <workItem from="1591353589281" duration="11382000" />
+      <workItem from="1591456620813" duration="4167000" />
     </task>
     <servers />
   </component>

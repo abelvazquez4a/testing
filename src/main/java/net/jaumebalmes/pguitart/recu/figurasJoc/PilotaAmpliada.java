@@ -7,7 +7,6 @@ public class PilotaAmpliada extends Pilota {
     boolean activa = true;
     Long fechaContagio = null;
 
-
     public PilotaAmpliada(float radi, Point point, Color color, int vX, int vY) {
         super(radi, point, color, vX, vY);
     }
@@ -21,7 +20,6 @@ public class PilotaAmpliada extends Pilota {
         super.dibuixa();
     }
 
-
     public boolean isActiva() {
         return activa;
     }
@@ -30,8 +28,7 @@ public class PilotaAmpliada extends Pilota {
         this.activa = activa;
     }
 
-
-    public boolean Intersect(PilotaAmpliada altraPilota) {
+    public boolean intersect(PilotaAmpliada altraPilota) {
         boolean intersect = false;
         double distancia = Math.sqrt(Math.pow((this.getPoint().getX() - altraPilota.getPoint().getX()), 2) + Math.pow((this.getPoint().getY() - altraPilota.getPoint().getY()), 2));
         double sumaRadis = altraPilota.getRadi() + this.getRadi();
@@ -41,24 +38,12 @@ public class PilotaAmpliada extends Pilota {
         }
         return intersect;
     }
-    public boolean Intersect2(PilotaAmpliada altraPilota) {
-        boolean intersect = false;
-        double distancia = Math.sqrt(Math.pow((this.getPoint().getX() - altraPilota.getPoint().getX()), 2) + Math.pow((this.getPoint().getY() - altraPilota.getPoint().getY()), 2));
-        double sumaRadis = altraPilota.getRadi() + this.getRadi();
 
-        if (distancia <= sumaRadis+50) {
-            intersect = true;
-        }
-        return intersect;
-    }
-
-    public void Join(PilotaAmpliada altraPilota) {
-
+    public void infectar(PilotaAmpliada altraPilota) {
         int vXAltre = altraPilota.getvX();
         int vYAltre = altraPilota.getvY();
         int vXThis = this.getvX();
         int vYThis = this.getvY();
-
 
         this.setvX(vXAltre);
         this.setvY(vYAltre);
@@ -70,19 +55,6 @@ public class PilotaAmpliada extends Pilota {
         }else if(altraPilota.getPoint().x<this.getPoint().x){
             this.setPoint(new Point(this.getPoint().x+3,this.getPoint().y+3));
         }
-        /*
-        if(vXAltre>0){
-            this.setPoint(new Point(this.getPoint().x-1,this.getPoint().y-1));
-
-        }else if (vXAltre<0){
-            this.setPoint(new Point(this.getPoint().x+1,this.getPoint().y+1));
-        }
-      if(vXThis<0){
-            altraPilota.setPoint(new Point(altraPilota.getPoint().x-1,altraPilota.getPoint().y-1));
-        }else if (vXThis>0){
-            altraPilota.setPoint(new Point(altraPilota.getPoint().x+1,altraPilota.getPoint().y+1));
-        }*/
-
 
         if (this.getColor() != altraPilota.getColor() && this.getColor() != Color.pink && altraPilota.getColor() != Color.pink) {
             altraPilota.setColor(Color.red);

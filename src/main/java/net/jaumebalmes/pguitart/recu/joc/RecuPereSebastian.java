@@ -7,8 +7,8 @@ import processing.core.PApplet;
 import java.awt.*;
 
 public class RecuPereSebastian extends Joc {
-    private boolean finalJoc = false;
-    PilotaAmpliada [] listaPilotas = new PilotaAmpliada[50];
+
+    PilotaAmpliada[] listaPilotas = new PilotaAmpliada[20];
 
     public RecuPereSebastian(PApplet canvas) {
         super(canvas);
@@ -21,53 +21,56 @@ public class RecuPereSebastian extends Joc {
 
     @Override
     public void canvasDraw() {
-        getCanvas().background(240,248,255);
-        for (int i = 0; i < listaPilotas.length ; i++) {
-                listaPilotas[i].dibuixa();
+        getCanvas().background(240, 248, 255);
+        for (int i = 0; i < listaPilotas.length; i++) {
+            listaPilotas[i].dibuixa();
         }
     }
 
     @Override
     public void prepararJoc() {
-        for (int i = 0; i < listaPilotas.length ; i++) {
-            listaPilotas[i]= new PilotaAmpliada(10f,new Point(((int)(Math.random()*getCanvas().width)+1),((int)(Math.random()*getCanvas().height)+1)),Color.GRAY,2,2);
+        /**
+         * Crea pelotas
+         */
+        for (int i = 0; i < listaPilotas.length; i++) {
+            listaPilotas[i] = new PilotaAmpliada(10f, new Point(((int) (Math.random() * getCanvas().width) + 1),
+                    ((int) (Math.random() * getCanvas().height) + 1)), Color.GRAY, 2, 2);
         }
-        for (int i = 0; i <listaPilotas.length ; i++) {
+
+        for (int i = 0; i < listaPilotas.length; i++) {
             for (int j = 1; j < listaPilotas.length; j++) {
-                if (i!=j){
-                    while (listaPilotas[i].Intersect2(listaPilotas[j])){
-                        listaPilotas[i].setPoint(new Point(((int)(Math.random()*getCanvas().width)+1),((int)(Math.random()*getCanvas().height)+1)));
+                if (i != j) {
+                    while (listaPilotas[i].intersect(listaPilotas[j])) {
+                        listaPilotas[i].setPoint(new Point(((int) (Math.random() * getCanvas().width) + 1),
+                                ((int) (Math.random() * getCanvas().height) + 1)));
                     }
                 }
             }
         }
-
         listaPilotas[0].setColor(Color.red);
         listaPilotas[0].setFechaContagio(System.currentTimeMillis());
-    }
-    public int numero (int porcentaje,int total){
-        return ((porcentaje*total)/100);
     }
 
     @Override
     public void jugada() {
         for (int i = 0; i < listaPilotas.length; i++) {
-               for (int j = 0; j < listaPilotas.length; j++) {
-                   if (listaPilotas[i].Intersect(listaPilotas[j])&&i!=j) {
-                       listaPilotas[i].Join(listaPilotas[j]);
-                   }
-               }
-               listaPilotas[i].move();
+            for (int j = 0; j < listaPilotas.length; j++) {
+                if (listaPilotas[i].intersect(listaPilotas[j]) && i != j) {
+                    listaPilotas[i].infectar(listaPilotas[j]);
+                }
+            }
+            listaPilotas[i].move();
         }
     }
 
     @Override
     public void finalJoc() {
+
     }
 
     @Override
     public void keyPressed() {
-        finalJoc=true;
+
     }
 
     public static void main(String[] args) {
@@ -78,3 +81,4 @@ public class RecuPereSebastian extends Joc {
         PApplet.runSketch(processingArgs, canvas);
     }
 }
+
