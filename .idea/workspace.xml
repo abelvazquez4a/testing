@@ -2,27 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d08f6e6-6a6c-4799-a6db-46e94b5ee16e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/jaumebalmes/pguitart/practica1/canvas/Canvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/jaumebalmes/pguitart/practica1/canvas/Canvas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/jaumebalmes/pguitart/practica1/figurasJoc/Pilota.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/jaumebalmes/pguitart/practica1/figurasJoc/Pilota.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/jaumebalmes/pguitart/practica1/figurasJoc/PilotaAmpliada.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/jaumebalmes/pguitart/practica1/figurasJoc/PilotaAmpliada.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/jaumebalmes/pguitart/practica1/figures/Rectangle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/jaumebalmes/pguitart/practica1/figures/Triangle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/jaumebalmes/pguitart/practica1/joc/JocAgario.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/jaumebalmes/pguitart/practica1/joc/JocPilotaMoviment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/jaumebalmes/pguitart/practica1/joc/JocPlujaFormes.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/jaumebalmes/pguitart/practica1/joc/JocSupervivencia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/jaumebalmes/pguitart/practica1/joc/RecuPereSebastian.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/jaumebalmes/pguitart/practica1/joc/img/gameOver.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/jaumebalmes/pguitart/practica1/canvas/Canvas.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/jaumebalmes/pguitart/practica1/canvas/Canvas.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/jaumebalmes/pguitart/practica1/figurasJoc/Pilota.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/jaumebalmes/pguitart/practica1/figurasJoc/Pilota.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/jaumebalmes/pguitart/practica1/figurasJoc/PilotaAmpliada.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/jaumebalmes/pguitart/practica1/figurasJoc/PilotaAmpliada.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/jaumebalmes/pguitart/practica1/figures/Rectangle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/jaumebalmes/pguitart/practica1/figures/Triangle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/jaumebalmes/pguitart/practica1/joc/JocAgario.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/jaumebalmes/pguitart/practica1/joc/JocPilotaMoviment.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/jaumebalmes/pguitart/practica1/joc/JocPlujaFormes.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/jaumebalmes/pguitart/practica1/joc/JocSupervivencia.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/jaumebalmes/pguitart/recu/figurasJoc/Pilota.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/jaumebalmes/pguitart/recu/figurasJoc/Pilota.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/jaumebalmes/pguitart/recu/figurasJoc/PilotaAmpliada.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/jaumebalmes/pguitart/recu/figurasJoc/PilotaAmpliada.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/jaumebalmes/pguitart/recu/joc/RecuPereSebastian.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/jaumebalmes/pguitart/recu/joc/RecuPereSebastian.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -171,7 +154,8 @@
       <workItem from="1571949181323" duration="3767000" />
       <workItem from="1572035979176" duration="44000" />
       <workItem from="1572631506562" duration="25597000" />
-      <workItem from="1591336412894" duration="3355000" />
+      <workItem from="1591336412894" duration="4269000" />
+      <workItem from="1591353589281" duration="9512000" />
     </task>
     <servers />
   </component>

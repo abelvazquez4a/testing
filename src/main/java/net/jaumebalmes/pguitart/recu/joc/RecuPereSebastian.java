@@ -8,7 +8,7 @@ import java.awt.*;
 
 public class RecuPereSebastian extends Joc {
     private boolean finalJoc = false;
-    PilotaAmpliada [] listaPilotas = new PilotaAmpliada[5];
+    PilotaAmpliada [] listaPilotas = new PilotaAmpliada[50];
 
     public RecuPereSebastian(PApplet canvas) {
         super(canvas);
@@ -29,30 +29,35 @@ public class RecuPereSebastian extends Joc {
 
     @Override
     public void prepararJoc() {
-        int posicioY = getCanvas().height/2;
-        int posicioX = getCanvas().width;
-        listaPilotas[0]=(new PilotaAmpliada(20f,new Point(new Point(30,posicioY)),Color.red,1,0));
-        listaPilotas[1]=(new PilotaAmpliada(20f,new Point(numero(20,posicioX),posicioY),Color.gray,0,0));
-        listaPilotas[2]=(new PilotaAmpliada(20f,new Point(numero(40,posicioX),posicioY),Color.gray,0,0));
-        listaPilotas[3]=(new PilotaAmpliada(20f,new Point(numero(60,posicioX),posicioY),Color.gray,0,0));
-        listaPilotas[4]=(new PilotaAmpliada(20f,new Point(numero(80,posicioX),posicioY),Color.gray,0,0));
+        for (int i = 0; i < listaPilotas.length ; i++) {
+            listaPilotas[i]= new PilotaAmpliada(10f,new Point(((int)(Math.random()*getCanvas().width)+1),((int)(Math.random()*getCanvas().height)+1)),Color.GRAY,1,1);
+        }
+        for (int i = 0; i <listaPilotas.length ; i++) {
+            for (int j = 1; j < listaPilotas.length; j++) {
+                if (i!=j){
+                    while (listaPilotas[i].Intersect2(listaPilotas[j])){
+                        listaPilotas[i].setPoint(new Point(((int)(Math.random()*getCanvas().width)+1),((int)(Math.random()*getCanvas().height)+1)));
+                    }
+                }
+            }
+        }
+
+        listaPilotas[0].setColor(Color.red);
+        listaPilotas[0].setFechaContagio(System.currentTimeMillis());
     }
     public int numero (int porcentaje,int total){
         return ((porcentaje*total)/100);
     }
+
     @Override
     public void jugada() {
         for (int i = 0; i < listaPilotas.length; i++) {
-            if (listaPilotas[i].isActiva()) {
-                for (int j = 0; j < listaPilotas.length; j++) {
-                        if (listaPilotas[i].Intersect(listaPilotas[j]) ) {
-                            listaPilotas[i].Join(listaPilotas[j]);
-                        }
-                }
-                if( listaPilotas[i].isActiva()){
-                    listaPilotas[i].move();
-                }
-            }
+               for (int j = 0; j < listaPilotas.length; j++) {
+                   if (listaPilotas[i].Intersect(listaPilotas[j])&&i!=j) {
+                       listaPilotas[i].Join(listaPilotas[j]);
+                   }
+               }
+               listaPilotas[i].move();
         }
     }
 
