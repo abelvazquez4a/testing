@@ -30,7 +30,7 @@ public class RecuPereSebastian extends Joc {
     @Override
     public void prepararJoc() {
         for (int i = 0; i < listaPilotas.length ; i++) {
-            listaPilotas[i]= new PilotaAmpliada(10f,new Point(((int)(Math.random()*getCanvas().width)+1),((int)(Math.random()*getCanvas().height)+1)),Color.GRAY,1,1);
+            listaPilotas[i]= new PilotaAmpliada(10f,new Point(((int)(Math.random()*getCanvas().width)+1),((int)(Math.random()*getCanvas().height)+1)),Color.GRAY,2,2);
         }
         for (int i = 0; i <listaPilotas.length ; i++) {
             for (int j = 1; j < listaPilotas.length; j++) {

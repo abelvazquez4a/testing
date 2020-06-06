@@ -65,6 +65,11 @@ public class PilotaAmpliada extends Pilota {
         altraPilota.setvX(vXThis);
         altraPilota.setvY(vYThis);
 
+        if(altraPilota.getPoint().x>this.getPoint().x){
+            this.setPoint(new Point(this.getPoint().x-3,this.getPoint().y-3));
+        }else if(altraPilota.getPoint().x<this.getPoint().x){
+            this.setPoint(new Point(this.getPoint().x+3,this.getPoint().y+3));
+        }
         /*
         if(vXAltre>0){
             this.setPoint(new Point(this.getPoint().x-1,this.getPoint().y-1));
