@@ -6,11 +6,11 @@ import processing.core.PApplet;
 
 import java.awt.*;
 
-public class RecuPereSebastian extends Joc {
+public class RecuPereSebastian4 extends Joc {
 
-    PilotaAmpliada[] listaPilotas = new PilotaAmpliada[20];
+    PilotaAmpliada[] listaPilotas = new PilotaAmpliada[300];
 
-    public RecuPereSebastian(PApplet canvas) {
+    public RecuPereSebastian4(PApplet canvas) {
         super(canvas);
     }
 
@@ -33,7 +33,7 @@ public class RecuPereSebastian extends Joc {
          * Crea pelotas
          */
         for (int i = 0; i < listaPilotas.length; i++) {
-            listaPilotas[i] = new PilotaAmpliada(10f, new Point(((int) (Math.random() * getCanvas().width) + 1),
+            listaPilotas[i] = new PilotaAmpliada(6f, new Point(((int) (Math.random() * getCanvas().width) + 1),
                     ((int) (Math.random() * getCanvas().height) + 1)), Color.GRAY, 2, 2);
         }
 
@@ -47,8 +47,16 @@ public class RecuPereSebastian extends Joc {
                 }
             }
         }
+        activarUnaOctavaPart(listaPilotas);
         listaPilotas[0].setColor(Color.red);
         listaPilotas[0].setFechaContagio(System.currentTimeMillis());
+    }
+
+    public void activarUnaOctavaPart(PilotaAmpliada [] lista){
+        int octavaPart = ((lista.length*12)/100);
+        for (int i = 0; i < octavaPart; i++) {
+            lista[i].setActiva(true);
+        }
     }
 
     @Override
@@ -56,10 +64,13 @@ public class RecuPereSebastian extends Joc {
         for (int i = 0; i < listaPilotas.length; i++) {
             for (int j = 0; j < listaPilotas.length; j++) {
                 if (listaPilotas[i].intersect(listaPilotas[j]) && i != j) {
-                    listaPilotas[i].infectar(listaPilotas[j]);
+                    listaPilotas[i].infectar2(listaPilotas[j]);
                 }
             }
-            listaPilotas[i].move();
+            listaPilotas[i].comprobarInmune();
+            if (listaPilotas[i].isActiva()){
+                listaPilotas[i].move();
+            }
         }
     }
 
@@ -76,7 +87,7 @@ public class RecuPereSebastian extends Joc {
     public static void main(String[] args) {
         String[] processingArgs = {"Recu Sebas"};
         Canvas canvas = new Canvas();
-        Joc joc = new RecuPereSebastian(canvas);
+        Joc joc = new RecuPereSebastian4(canvas);
         canvas.setJoc(joc);
         PApplet.runSketch(processingArgs, canvas);
     }

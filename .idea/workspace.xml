@@ -2,14 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d08f6e6-6a6c-4799-a6db-46e94b5ee16e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/jaumebalmes/pguitart/recu/joc/RecuPereSebastian2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/jaumebalmes/pguitart/recu/joc/RecuPereSebastian4.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/jaumebalmes/pguitart/recu/figurasJoc/Pilota.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/jaumebalmes/pguitart/recu/figurasJoc/Pilota.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/jaumebalmes/pguitart/recu/figurasJoc/PilotaAmpliada.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/jaumebalmes/pguitart/recu/figurasJoc/PilotaAmpliada.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/jaumebalmes/pguitart/recu/joc/RecuPereSebastian.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/jaumebalmes/pguitart/recu/joc/RecuPereSebastian.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/jaumebalmes/pguitart/recu/joc/RecuPereSebastian.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/jaumebalmes/pguitart/recu/joc/RecuPereSebastian3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/jaumebalmes/pguitart/recu/canvas/Canvas.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/jaumebalmes/pguitart/recu/canvas/Canvas.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/net/jaumebalmes/pguitart/recu/figurasJoc/Pilota.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/jaumebalmes/pguitart/recu/figurasJoc/Pilota.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/net/jaumebalmes/pguitart/recu/figurasJoc/PilotaAmpliada.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/jaumebalmes/pguitart/recu/figurasJoc/PilotaAmpliada.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/jaumebalmes/pguitart/recu/joc/RecuPereSebastian.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/jaumebalmes/pguitart/recu/joc/RecuPereSebastian.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/jaumebalmes/pguitart/recu/figures/Circle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/jaumebalmes/pguitart/recu/figures/Circle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/jaumebalmes/pguitart/recu/figures/Shape.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/jaumebalmes/pguitart/recu/figures/Shape.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/jaumebalmes/pguitart/recu/joc/Joc.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/jaumebalmes/pguitart/recu/joc/Joc.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/jaumebalmes/pguitart/recu/joc/RecuPereSebastian.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,6 +34,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1SewbZZ7XC9oTDPcpD9FESso3ZF" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -49,6 +58,11 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="net.jaumebalmes.pguitart.recu.joc" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -61,20 +75,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.RecuPereSebastian">
-    <configuration name="Joc" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="net.jaumebalmes.pguitart.recu.joc.Joc" />
-      <module name="practica1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="net.jaumebalmes.pguitart.recu.joc.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.RecuPereSebastian3">
     <configuration name="JocAgario" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="net.jaumebalmes.pguitart.practica1.joc.JocAgario" />
       <module name="practica1" />
@@ -114,8 +115,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RecuPereSebastian" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="net.jaumebalmes.pguitart.recu.joc.RecuPereSebastian" />
+    <configuration name="RecuPereSebastian2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="net.jaumebalmes.pguitart.recu.joc.RecuPereSebastian2" />
+      <module name="practica1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="net.jaumebalmes.pguitart.recu.joc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RecuPereSebastian3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="net.jaumebalmes.pguitart.recu.joc.RecuPereSebastian3" />
       <module name="practica1" />
       <extension name="coverage">
         <pattern>
@@ -128,19 +142,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.RecuPereSebastian" />
-      <item itemvalue="Application.Joc" />
+      <item itemvalue="Application.RecuPereSebastian2" />
       <item itemvalue="Application.JocPilotaMoviment" />
       <item itemvalue="Application.JocPlujaFormes" />
       <item itemvalue="Application.JocAgario" />
+      <item itemvalue="Application.RecuPereSebastian3" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.RecuPereSebastian" />
+        <item itemvalue="Application.RecuPereSebastian3" />
+        <item itemvalue="Application.RecuPereSebastian2" />
         <item itemvalue="Application.JocAgario" />
         <item itemvalue="Application.JocPilotaMoviment" />
         <item itemvalue="Application.JocPlujaFormes" />
-        <item itemvalue="Application.Joc" />
       </list>
     </recent_temporary>
   </component>
@@ -161,6 +175,7 @@
       <workItem from="1591336412894" duration="4269000" />
       <workItem from="1591353589281" duration="11382000" />
       <workItem from="1591456620813" duration="4167000" />
+      <workItem from="1591732188667" duration="6309000" />
     </task>
     <servers />
   </component>
